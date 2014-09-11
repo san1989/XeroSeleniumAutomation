@@ -121,8 +121,9 @@ namespace SeleniumTests
                 verificationErrors.Append(e.Message);
             }
 
-            // Entering all the valid inputs on the page. Please change the start date(write the next day's date on which you are executing) in the script before executing it.
-            selenium.Type("id=StartDate", "12 Sep 2014");
+            // Entering all the valid inputs on the page. 
+            string InvoiceDate = DateTime.Now.AddDays(1).ToString("dd MMM yyyy");
+            selenium.Type("id=StartDate", InvoiceDate);
             selenium.Type("id=DueDateDay", "1");
             selenium.Click("id=DueDateType_toggle");
             selenium.Click("//div[@id='DueDateType_suggestions']/div/div[2]");

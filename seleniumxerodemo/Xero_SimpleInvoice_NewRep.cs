@@ -152,7 +152,8 @@ namespace SeleniumTests
             }
 
             //Enter all the valid values for the Invoice page
-            selenium.Type("id=StartDate", "12 Sep 2014");
+            string InvoiceDate= DateTime.Now.AddDays(1).ToString("dd MMM yyyy");
+            selenium.Type("id=StartDate", InvoiceDate);
             selenium.Type("id=DueDateDay", "1");
             selenium.Click("id=DueDateType_toggle");
             selenium.Click("//div[@id='DueDateType_suggestions']/div/div[2]");
@@ -164,12 +165,12 @@ namespace SeleniumTests
             //Enter the Items in the  first row of the Table from the inventory
             selenium.Click("//div[@id='ext-gen19']/div/table/tbody/tr/td[2]/div");
             selenium.Click("//div[2]/div/img");
-            selenium.Click("//div[8]/div/div[4]");
+            selenium.Click("//div[8]/div/div[5]");
 
             //Enter the Items in the  second row of the Table from the inventory
             selenium.Click("//div[@id='ext-gen19']/div[2]/table/tbody/tr/td[2]/div");
             selenium.Click("//div[2]/div/img");
-            selenium.Click("//div[8]/div/div[5]");
+            selenium.Click("//div[8]/div/div[6]");
 
             //Deleting all the un- necessary rows from the table
             selenium.Click("//div[@id='ext-gen19']/div[3]/table/tbody/tr/td[11]/div/div/div");
