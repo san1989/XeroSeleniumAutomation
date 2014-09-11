@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Xero Selenium Test Automation Project : Automation Testing project for the Repeating Invoice functionality of the Xero Web application.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Xero Selenium Test Automation Project</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/san1989/XeroSeleniumAutomation">View on GitHub</a>
+
+          <h1 id="project_title">Xero Selenium Test Automation Project</h1>
+          <h2 id="project_tagline">Automation Testing project for the Repeating Invoice functionality of the Xero Web application.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/san1989/XeroSeleniumAutomation/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/san1989/XeroSeleniumAutomation/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="project-overview" class="anchor" href="#project-overview"><span class="octicon octicon-link"></span></a>Project overview:</h1>
+
+<ol>
+<li>This Project application was created to deliver a working solution for an exercise assigned by Xero as part of their recruitment process.</li>
+<li>This project tests the Repeating Invoice functionality of the Xero web application via automation testing.</li>
+</ol><h2>
+<a name="installationconfiguration-environment" class="anchor" href="#installationconfiguration-environment"><span class="octicon octicon-link"></span></a>Installation/Configuration environment:</h2>
+
+<p>The tests were performed on Windows 7 environment with an active internet connection.
+   Other installations,</p>
+
+<ol>
+<li>
+<strong>Firefox web browser 29</strong>: All the tests were performed on Firefox.</li>
+<li>
+<strong>Selenium web driver IDE 2.6.0</strong>: Selenium web driver and the client server for C# was downloaded and installed on to Firefox as add-on.</li>
+<li>
+<strong>Visual Studio Express 2013 for desktop</strong>: The project was built here.</li>
+<li>
+<strong>NUnit 2.6.3.13283</strong>: All the generated and fixed test automation scripts were run via NUnit.</li>
+</ol><h2>
+<a name="repository-overview" class="anchor" href="#repository-overview"><span class="octicon octicon-link"></span></a>Repository Overview:</h2>
+
+<p>There are three script files( .) and a zip file in the root directory of the XeroSeleniumAutomation repository.
+   Each script file represents one test automation flow of the many sub functionalities of the repeating invoices function.</p>
+
+<ol>
+<li>
+<p><strong>Xero_SimpleInvoice_NewRep.cs</strong>: This Automation script tests the XERO application's Repeating Invoice functionality.This script specifically tests the creation of the repeating invoices using the invoicing form.</p>
+
+<p><strong><em>Expected Result</em></strong>:Repeating Invoice gets created and the test passes when the invoice is listed in the Invoices page.</p>
+</li>
+<li>
+<p><strong>Xero_DraftEmail_NewRepInvoice.cs</strong>: This Automation script tests the XERO application's Repeating Invoice functionality.This script specifically tests the additional flow of drafting an Email for the customer and it also tests the deletion of all invoices created along with the creation of the repeating invoices using the invoicing form. This script also deletes the unused rows in the Items table on the New Repeating Invoice page.</p>
+
+<p><strong><em>Expected Result</em></strong>:The Repeating Invoice gets created along with the option of Approve for sending option and the test passes when it meets all the specified criterias.</p>
+</li>
+<li>
+<p><strong>Xero_NewInventory_NewRepInvoice.cs</strong>: This Automation script tests the XERO application's Repeating Invoice functionality.This script specifically tests the additional flow of adding new items in the Inventory along with the creation of the repeating invoices using the invoicing form. The item code has been randomly created by using javascript method.</p>
+
+<p><strong><em>Expected Result</em></strong>:The Repeating Invoice gets created with the new item added to the inventory.</p>
+
+<p>The <strong>projectZip</strong> Zip file is the working copy of the project in which these scripts were run.</p>
+</li>
+</ol><h2>
+<a name="executing-the-scripts" class="anchor" href="#executing-the-scripts"><span class="octicon octicon-link"></span></a>Executing the scripts:</h2>
+
+<p>To run these scripts please explode the <strong>projectZip</strong> Zip file in the work space described in the working environment <em>installation/configuration</em> section above.</p>
+
+<h2>
+<a name="challenges-and-learning" class="anchor" href="#challenges-and-learning"><span class="octicon octicon-link"></span></a>Challenges and learning:</h2>
+
+<h3>
+<a name="installation-and-environment-setup-issues" class="anchor" href="#installation-and-environment-setup-issues"><span class="octicon octicon-link"></span></a>Installation and environment setup issues:</h3>
+
+<ol>
+<li>I did not have a system setup for automation testing. I have mostly had my testing experience in QC and UFT. Though these applications were installed on my personal computer, I could not run them with expired trial licenses.<br>
+</li>
+<li>I also have no experience in using Selenium and nUnit for testing, or using Visual Studio 2013 Express for developing in C#.</li>
+</ol><h3>
+<a name="learning-and-discoveries" class="anchor" href="#learning-and-discoveries"><span class="octicon octicon-link"></span></a>Learning and discoveries:</h3>
+
+<ol>
+<li>I decided to go with the combination of Selenium nUnit and Visual Studio, encountered installation and environment configuration issues, resolved them by following troubleshooting instructions available online.</li>
+<li>I went thru Selenium tutorials available online to make myself comfortable with creating automation scripts and importing these scripts to Visual studio to further tweak them.</li>
+<li>I discovered Selenium is quiet straightforward to work with, once the initial setup is done and its basic functionalities are understood.</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Xero Selenium Test Automation Project maintained by <a href="https://github.com/san1989">san1989</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
